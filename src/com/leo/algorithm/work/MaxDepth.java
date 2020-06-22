@@ -9,6 +9,7 @@ import com.leo.algorithm.model.TreeNode;
  */
 public class MaxDepth {
 
+    //标准递归写法 0ms
     public int maxDepth(TreeNode root) {
         if(root == null){
             return 0;
