@@ -2,6 +2,10 @@ package com.leo.algorithm.work;
 
 import java.util.Stack;
 
+/**
+ * 剑指 Offer 09. 用两个栈实现队列
+ * https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
+ */
 public class CQueue {
 
     Stack<Integer> stack1;
