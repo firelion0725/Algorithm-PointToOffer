@@ -1,5 +1,8 @@
 package com.leo.algorithm.work;
 
+/**
+ * https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/
+ */
 public class HammingWeight {
     public int hammingWeight(int n) {
         int count = 0;
