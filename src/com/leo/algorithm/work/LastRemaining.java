@@ -40,6 +40,4 @@ public class LastRemaining {
         }
         return ans;
     }
-
-
 }
