@@ -15,7 +15,9 @@ public class LeastNumbers {
         int[] res = new int[k];
 
         Arrays.sort(arr);
-        if (k + 1 >= 0) System.arraycopy(arr, 0, res, 0, k + 1);
+        for (int i = 0; i <= k; i++) {
+            res[i] = arr[i];
+        }
         return res;
     }
 }
