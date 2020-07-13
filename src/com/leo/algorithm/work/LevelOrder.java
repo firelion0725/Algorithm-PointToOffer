@@ -42,4 +42,37 @@ public class LevelOrder {
         }
         return res;
     }
+
+    /**
+     * https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/
+     */
+    public int[] levelOrder2(TreeNode root) {
+        if (root == null) {
+            return new int[0];
+        }
+        List<Integer> res = new ArrayList<>();
+
+        Deque<TreeNode> deque = new LinkedList<>();
+        deque.add(root);
+        while (!deque.isEmpty()) {
+            int size = deque.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode tn = deque.poll();
+                res.add(tn.val);
+
+                if (tn.left != null) {
+                    deque.add(tn.left);
+                }
+                if (tn.right != null) {
+                    deque.add(tn.right);
+                }
+            }
+        }
+
+        int[] result = new int[res.size()];
+        for (int i = 0; i < res.size(); i++) {
+            result[i] = res.get(i);
+        }
+        return result;
+    }
 }
