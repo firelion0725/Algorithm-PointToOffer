@@ -2,6 +2,9 @@ package com.leo.algorithm.work;
 
 import com.leo.algorithm.model.TreeNode;
 
+/**
+ * https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/
+ */
 public class IsSubStructure {
 
     public boolean isSubStructure(TreeNode A, TreeNode B) {
